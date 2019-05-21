@@ -1761,7 +1761,7 @@ var init = function(){
 	
 	$(".desposit100eth").click(function(){
 		if(!checkAll()){return;}
-		var etherValue = web3.utils.toWei("100", 'ether');
+		var etherValue = web3.utils.toWei("1", 'ether');
 		iconins.methods.deposit().send({from: defaultAccount, value: etherValue, gas:600000}, function(err, result){
 			if(err){
 				alertify.error(err.message);
